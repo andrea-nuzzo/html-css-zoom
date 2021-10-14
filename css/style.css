@@ -5,6 +5,13 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+
+body{
+    font-family: 'Roboto', sans-serif;
+}
+
+
 /* <--- END COMMON ---> */
 
 
@@ -40,6 +47,8 @@ header{
 /* <--- START MAIN ---> */
 
 main{
+    height: 100vh;
+    background-color:black;
     display: flex;
 }
 
@@ -68,12 +77,49 @@ main{
 .webcam{
     width: 80%;
     height: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
 }
 
 .img-cam{
     height: 200px;
-    width: 300px;
+    width: 20%;
     background-image: url('../img/webcam.png');
+    background-position: center;
+    background-size: cover;
+}
+
+
+.user{
+    height: 100%;
+    display: flex;
+    align-items: flex-end;
+}
+
+.row-setting{   
+    display: flex;
+    align-items: center;
+    background-color: rgba(30,30,30,0.8);
+    color: white;
+    padding: 3px;
+    position: relative;
+}
+
+.row-setting .span{
+    font-size: 10px;
+}
+
+.row-setting .name{
+    margin: 0 5px;
+}
+
+.mute{
+    color: red;
+    font-size: 20px;
+    position: absolute;
+    top:0;
+    left: 4px;
 }
 
 /* <--- END MAIN ---> */
@@ -91,10 +137,6 @@ main{
 /* <--- START DEBUG ---> */
 
 
-.debug main{
-    height: 100vh;
-    background-color: violet;
-}
 
 
 .debug footer{
