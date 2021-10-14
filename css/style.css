@@ -1,9 +1,69 @@
-/* <--- COMMON ---> */
 
+/* <--- COMMON ---> */
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-
 /* <--- END COMMON ---> */
+
+
+
+/* <--- START HEADER ---> */
+
+header{
+    height: 80px;
+    background-color: black;
+}
+
+.menu-window{
+    height: 100%;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+}
+
+.speaker-view, .full-screen{
+    background: linear-gradient(0deg, rgba(30,30,30,1) 0%, rgba(62,62,62,1) 100%);
+    color: white;
+    padding: 6px;
+    border-radius: 5px;
+    margin-left: 3px;
+}
+
+.full-screen{
+    margin-right: 20px;
+}
+
+
+
+/* <--- END HEADER ---> */
+
+/* <--- START MAIN ---> */
+/* <--- END MAIN ---> */
+
+/* <--- START FOOTER ---> */
+/* <--- END FOOTER ---> */
+
+
+
+
+
+
+
+
+/* <--- START DEBUG ---> */
+
+
+.debug main{
+    height: 100vh;
+    background-color: violet;
+}
+
+
+.debug footer{
+    height: 80px;
+    background-color: purple;
+}
+
+/* <--- END DEBUG ---> */
