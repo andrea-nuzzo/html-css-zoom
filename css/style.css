@@ -34,12 +34,48 @@ header{
 .full-screen{
     margin-right: 20px;
 }
-
-
-
 /* <--- END HEADER ---> */
 
+
 /* <--- START MAIN ---> */
+
+main{
+    display: flex;
+}
+
+.page-left, .page-right{
+    width: 10%;
+    height: 100%;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.page-left i, .page-right i{
+    font-size: 100px;
+}
+
+.page-left i{
+    color: gray;
+}
+
+.page-right i{
+    color: #5ab8f9;
+}
+
+.webcam{
+    width: 80%;
+    height: 100%;
+}
+
+.img-cam{
+    height: 200px;
+    width: 300px;
+    background-image: url('../img/webcam.png');
+}
+
 /* <--- END MAIN ---> */
 
 /* <--- START FOOTER ---> */
