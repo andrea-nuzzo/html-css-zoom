@@ -50,6 +50,7 @@ main{
     height: 100vh;
     background-color:black;
     display: flex;
+    justify-content: center;
 }
 
 .page-left, .page-right{
@@ -76,20 +77,19 @@ main{
 
 .webcam{
     width: 80%;
-    height: 100%;
+    height: 95%;
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
 }
 
 .img-cam{
-    height: 200px;
-    width: 20%;
+    height: 19%;
+    width: 19%;
     background-image: url('../img/webcam.png');
     background-position: center;
     background-size: cover;
 }
-
 
 .user{
     height: 100%;
@@ -101,30 +101,90 @@ main{
     display: flex;
     align-items: center;
     background-color: rgba(30,30,30,0.8);
+    font-size: 12px;
     color: white;
     padding: 3px;
     position: relative;
 }
 
-.row-setting .span{
-    font-size: 10px;
-}
-
 .row-setting .name{
     margin: 0 5px;
+    overflow: hidden;
 }
 
-.mute{
+.talkative{
     color: red;
-    font-size: 20px;
+    font-size: 17px;
     position: absolute;
     top:0;
     left: 4px;
 }
 
+.img-cam.speaker{
+ border: 3px solid rgba(255, 255, 0, 0.546);
+}
+
 /* <--- END MAIN ---> */
 
+
+
 /* <--- START FOOTER ---> */
+
+footer{
+    height: 60px;
+    background: linear-gradient(0deg, rgba(30,30,30,1) 0%, rgba(62,62,62,1) 100%);
+    display: flex;
+    justify-content: space-between;
+}
+
+.left-footer{
+    height: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.center-footer{
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.vertical{
+    height: 100%;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+    margin: 0 10px;
+    /* border: 1px solid red; */
+}
+
+.vertical span{
+    margin-top: 5px;
+}
+
+.vertical span, .vertical.chevron i{
+    font-size: 14px;
+}
+
+.vertical i{
+    font-size: 20px;
+}
+
+.vertical.end-meeting{
+    margin-right:0 ;
+    background-color: #4a4b4c;
+    color: #db5e53;
+    padding: 0 10px;
+}
+
+.vertical.green i{
+    color: #6ec43b ;
+}
 /* <--- END FOOTER ---> */
 
 
@@ -135,13 +195,5 @@ main{
 
 
 /* <--- START DEBUG ---> */
-
-
-
-
-.debug footer{
-    height: 80px;
-    background-color: purple;
-}
 
 /* <--- END DEBUG ---> */
